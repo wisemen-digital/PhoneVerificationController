@@ -26,7 +26,6 @@
 		D95E1C4B1D88E71A00F94976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D95E1C4E1D88E71A00F94976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D95E1C501D88E71A00F94976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D95E1C891D88F39300F94976 /* AppwiseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppwiseCore.framework; path = "../build/Debug-iphoneos/AppwiseCore.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +83,6 @@
 		D95E1C881D88F39300F94976 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D95E1C891D88F39300F94976 /* AppwiseCore.framework */,
 				8FE51CCC70443FC404419D89 /* Pods_Example.framework */,
 			);
 			name = Frameworks;

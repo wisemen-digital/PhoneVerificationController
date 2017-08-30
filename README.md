@@ -1,9 +1,9 @@
-# AppwiseCore
+# PhoneVerificationController
 
-[![CI Status](http://img.shields.io/travis/djbe/AppwiseCore.svg?style=flat)](https://travis-ci.org/djbe/PhoneVerificationController)
-[![Version](https://img.shields.io/cocoapods/v/AppwiseCore.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
-[![License](https://img.shields.io/cocoapods/l/AppwiseCore.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
-[![Platform](https://img.shields.io/cocoapods/p/AppwiseCore.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
+[![CI Status](http://img.shields.io/travis/djbe/PhoneVerificationController.svg?style=flat)](https://travis-ci.org/djbe/PhoneVerificationController)
+[![Version](https://img.shields.io/cocoapods/v/PhoneVerificationController.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
+[![License](https://img.shields.io/cocoapods/l/PhoneVerificationController.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
+[![Platform](https://img.shields.io/cocoapods/p/PhoneVerificationController.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 <a href="https://placehold.it/400?text=Screen+shot"><img width=200 height=200 src="https://placehold.it/400?text=Screen+shot" alt="Screenshot" /></a>
@@ -63,11 +63,11 @@ present(vc, animated: true)
 
 You'll receive a callback if the verification succeeds, or is cancelled.
 
-## Author
+## Authors
 
-[David Jennes](https://github.com/djbe)
-[Tom Knapen](https://github.com/wassup-)
-[Yannick Winters](https://github.com/YWinters)
+- [David Jennes](https://github.com/djbe)
+- [Tom Knapen](https://github.com/wassup-)
+- [Yannick Winters](https://github.com/YWinters)
 
 ## License
 
