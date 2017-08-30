@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "Country code"; ObjectID = "8Sr-CO-Acj"; */
+"8Sr-CO-Acj.placeholder" = "Indicatif de pays";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Mt4-uO-YGe"; */
+"Mt4-uO-YGe.normalTitle" = "Annuler";
+
+/* Class = "UITextField"; placeholder = "phonenumber"; ObjectID = "Q56-gb-PSX"; */
+"Q56-gb-PSX.placeholder" = "téléphone";
+
+/* Class = "UIButton"; normalTitle = "Try again"; ObjectID = "eGH-n2-JtO"; */
+"eGH-n2-JtO.normalTitle" = "Réessayer";
+
+/* Class = "UIButton"; normalTitle = "Verify"; ObjectID = "eXL-FQ-oui"; */
+"eXL-FQ-oui.normalTitle" = "Vérifier";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "qng-Js-Gi7"; */
+"qng-Js-Gi7.normalTitle" = "Envoyer";
+
+/* Class = "UILabel"; text = "Please enter your phone number (ex. +32 473123456)"; ObjectID = "wvX-Vo-aas"; */
+"wvX-Vo-aas.text" = "Entrez votre numéro de téléphone (par ex. +32 473123456)";
+
+/* Class = "UILabel"; text = "Please enter the verification code you will receive by SMS"; ObjectID = "zMk-s2-3C0"; */
+"zMk-s2-3C0.text" = "Entrez le code de vérification que vous recevrez par SMS";
