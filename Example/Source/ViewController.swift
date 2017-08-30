@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
 	@IBAction func startVerification() {
-		let configuration = Configuration(requestCode: { _, completion in
+		let configuration = Configuration(header: #imageLiteral(resourceName: "Menu Background"), requestCode: { _, completion in
 			DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 				completion("1234567890", nil)
 			}
