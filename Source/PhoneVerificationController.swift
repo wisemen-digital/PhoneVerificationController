@@ -9,7 +9,7 @@
 import CountryPicker
 import UIKit
 
-protocol PhoneVerificationDelegate: class {
+public protocol PhoneVerificationDelegate: class {
 	func cancelled(controller: PhoneVerificationController)
 	func verified(phoneNumber: String, controller: PhoneVerificationController)
 }
@@ -50,7 +50,7 @@ open class PhoneVerificationController: UIViewController {
 	fileprivate var originalText = [UILabel: String]()
 	fileprivate var errorTask = [UILabel: DispatchWorkItem]()
 	internal(set) var configuration: Configuration
-	internal weak var delegate: PhoneVerificationDelegate?
+	public weak var delegate: PhoneVerificationDelegate?
 
 	public init(configuration: Configuration) {
 		self.configuration = configuration

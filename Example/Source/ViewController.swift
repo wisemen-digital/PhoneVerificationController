@@ -25,3 +25,15 @@ class ViewController: UIViewController {
 		present(vc, animated: true)
 	}
 }
+
+extension ViewController: PhoneVerificationDelegate {
+	func cancelled(controller: PhoneVerificationController) {
+		print("Cancelled verification")
+		controller.dismiss(animated: true)
+	}
+
+	func verified(phoneNumber: String, controller: PhoneVerificationController) {
+		print("Verified phone \(phoneNumber)")
+		controller.dismiss(animated: true)
+	}
+}
