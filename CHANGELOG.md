@@ -2,13 +2,15 @@
 All notable changes to this project will be documented in this file.
 `PhoneVerificationController` adheres to [Semantic Versioning](http://semver.org/).
 
-## [Master](https://github.com/djbe/PhoneVerificationController)
+## [1.1.0](https://github.com/djbe/PhoneVerificationController/releases/tag/1.1.0)
 
-### Added
+### New Features
 
-### Changed
+- French & dutch translations.
 
-### Removed
+### Bug Fixes
+
+- Fix delegate visibility.
 
 ## [1.0.0](https://github.com/djbe/PhoneVerificationController/releases/tag/1.0.0)
 
