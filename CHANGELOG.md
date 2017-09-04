@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### New Features
 
+- Add a header foreground image view (with aspect-fit content scale).
+
 ### Bug Fixes
 
 ## [1.1.0](https://github.com/djbe/PhoneVerificationController/releases/tag/1.1.0)

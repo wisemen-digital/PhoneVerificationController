@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,8 @@
                 <outlet property="codeDescriptionLabel" destination="zMk-s2-3C0" id="uTB-L7-5Go"/>
                 <outlet property="codeSendButton" destination="eXL-FQ-oui" id="1li-Tx-xrU"/>
                 <outlet property="codeTryAgainButton" destination="eGH-n2-JtO" id="wCg-KU-yiv"/>
-                <outlet property="headerImageView" destination="g83-Tm-nl5" id="RPS-KP-Ldf"/>
+                <outlet property="headerBackgroundImageView" destination="g83-Tm-nl5" id="aFk-Jh-M3b"/>
+                <outlet property="headerForegroundImageView" destination="w5l-7o-xVB" id="LCU-jg-we7"/>
                 <outlet property="phoneActivityIndicator" destination="QoC-lo-zqy" id="A8r-OM-m3I"/>
                 <outlet property="phoneCancelButton" destination="Mt4-uO-YGe" id="caH-ao-Hoo"/>
                 <outlet property="phoneContainerView" destination="0xr-60-sze" id="fNO-IU-Yub"/>
@@ -45,12 +46,34 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IIm-Ze-gP6">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="665"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g83-Tm-nl5">
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xs-60-sze">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="165.66666666666666"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g83-Tm-nl5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="165.66666666666666"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="g83-Tm-nl5" secondAttribute="height" multiplier="5:2" id="uqZ-o3-ACa"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w5l-7o-xVB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="165.66666666666666"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="w5l-7o-xVB" secondAttribute="height" multiplier="5:2" id="oAk-Em-bWE"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="g83-Tm-nl5" secondAttribute="height" multiplier="5:2" id="uqZ-o3-ACa"/>
+                                        <constraint firstAttribute="bottom" secondItem="w5l-7o-xVB" secondAttribute="bottom" id="EXy-cT-wzc"/>
+                                        <constraint firstItem="w5l-7o-xVB" firstAttribute="leading" secondItem="0xs-60-sze" secondAttribute="leading" id="aQm-Ds-gl2"/>
+                                        <constraint firstItem="w5l-7o-xVB" firstAttribute="top" secondItem="0xs-60-sze" secondAttribute="top" id="aS1-FR-oJD"/>
+                                        <constraint firstAttribute="bottom" secondItem="g83-Tm-nl5" secondAttribute="bottom" id="hEW-Zg-Xte"/>
+                                        <constraint firstItem="g83-Tm-nl5" firstAttribute="leading" secondItem="0xs-60-sze" secondAttribute="leading" id="hof-VR-b0v"/>
+                                        <constraint firstItem="g83-Tm-nl5" firstAttribute="top" secondItem="0xs-60-sze" secondAttribute="top" id="qZp-6V-kih"/>
+                                        <constraint firstAttribute="trailing" secondItem="w5l-7o-xVB" secondAttribute="trailing" id="wfc-91-9nV"/>
+                                        <constraint firstAttribute="trailing" secondItem="g83-Tm-nl5" secondAttribute="trailing" id="zRg-o0-Dnb"/>
                                     </constraints>
-                                </imageView>
+                                </view>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xr-60-sze">
                                     <rect key="frame" x="0.0" y="173.66666666666669" width="414" height="295.33333333333337"/>
                                     <subviews>
@@ -134,7 +157,7 @@
                                                                             <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" keyboardAppearance="alert" textContentType="tel"/>
+                                                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad" keyboardAppearance="alert"/>
                                                                             <connections>
                                                                                 <action selector="phoneFieldChanged:" destination="-1" eventType="editingChanged" id="bvD-Ba-byv"/>
                                                                             </connections>

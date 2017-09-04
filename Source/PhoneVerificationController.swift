@@ -15,7 +15,8 @@ public protocol PhoneVerificationDelegate: class {
 }
 
 open class PhoneVerificationController: UIViewController {
-	@IBOutlet var headerImageView: UIImageView!
+	@IBOutlet var headerBackgroundImageView: UIImageView!
+	@IBOutlet var headerForegroundImageView: UIImageView!
 	@IBOutlet var phoneContainerView: UIView!
 	@IBOutlet var phoneActivityIndicator: UIActivityIndicatorView!
 	@IBOutlet var phoneCountryImageView: UIImageView!
@@ -109,7 +110,8 @@ extension PhoneVerificationController {
 		for view in [view, phoneContainerView, codeContainerView] {
 			view?.backgroundColor = configuration.background
 		}
-		headerImageView.image = configuration.header
+		headerBackgroundImageView.image = configuration.headerBackground
+		headerForegroundImageView.image = configuration.headerForeground
 		for label in [phoneDescriptionLabel, codeDescriptionLabel] {
 			label?.textColor = configuration.text
 		}

@@ -14,7 +14,8 @@ public struct Configuration {
 
 	let statusBar: UIStatusBarStyle
 	let keyboard: UIKeyboardAppearance
-	let header: UIImage?
+	let headerBackground: UIImage?
+	let headerForeground: UIImage?
 	let background: UIColor
 	let text: UIColor
 	let buttonTint: UIColor
@@ -33,7 +34,8 @@ public struct Configuration {
 
 	public init(statusBar: UIStatusBarStyle = .lightContent,
 	     keyboard: UIKeyboardAppearance = .dark,
-	     header: UIImage? = nil,
+	     headerBackground: UIImage? = nil,
+	     headerForeground: UIImage? = nil,
 	     background: UIColor = .black,
 	     text: UIColor = .white,
 	     buttonTint: UIColor = .white,
@@ -50,7 +52,8 @@ public struct Configuration {
 	     signIn: @escaping SignInBlock) {
 		self.statusBar = statusBar
 		self.keyboard = keyboard
-		self.header = header
+		self.headerBackground = headerBackground
+		self.headerForeground = headerForeground
 		self.background = background
 		self.text = text
 		self.buttonTint = buttonTint
