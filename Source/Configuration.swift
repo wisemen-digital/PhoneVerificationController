@@ -9,8 +9,22 @@
 import UIKit
 
 public struct Configuration {
-	public typealias RequestCodeBlock = (String, @escaping (String?, Error?) -> Void) -> Void
-	public typealias SignInBlock = (String, String, @escaping (Error?) -> Void) -> Void
+	/**
+		Block that receives a phone number and is expected to call a completion block with a verification ID.
+		
+		- Parameter phoneNumber: the phone number to verify
+		- Parameter completion: the completion block (must be called!)
+	*/
+	public typealias RequestCodeBlock = (_ phoneNumber: String, _ completion: @escaping (_ verificationID: String?, _ error: Error?) -> Void) -> Void
+
+	/**
+		Block that receives a verification ID and code, and is expected to call a completion block with success (or an error).
+
+		- Parameter verificationID: the verification session ID
+		- Parameter verificationCode: the matching verification code
+		- Parameter completion: the completion block (must be called!)
+	*/
+	public typealias SignInBlock = (_ verificationID: String, _ verificationCode: String, _ completion: @escaping (_ error: Error?) -> Void) -> Void
 
 	let statusBar: UIStatusBarStyle
 	let keyboard: UIKeyboardAppearance
@@ -30,8 +44,36 @@ public struct Configuration {
 	let errorDuration: TimeInterval
 	let requestCode: RequestCodeBlock
 	let signIn: SignInBlock
-	var verificationID: String?
 
+	/**
+		If you already have a verification ID from FireBase, you can set it here to resume code verification.
+
+		NOTE: not implemented yet.
+	*/
+	public var verificationID: String?
+
+	/**
+		Create a configuration object used by the phone verification controller.
+	
+		- Parameter statusBar: The preferred status bar style for the controller. Default: lightContent
+		- Parameter keyboard: The keyboard's appearance when focused on fields. Default: dark
+		- Parameter headerBackground: The header's background image (aspect-fill). Default: nil
+		- Parameter headerForeground: The header's foreground image (aspect-fit). Default: nil
+		- Parameter background: The general background color. Default: black
+		- Parameter text: The general foreground (text) color. Default: white
+		- Parameter buttonTint: The tint color applied to all buttons and fields. Default: white
+		- Parameter buttonTextEnabled: The text color for enabled buttons. Default: white
+		- Parameter buttonTextDisabled: The text color for disabled buttons. Default: white
+		- Parameter buttonBackgroundEnabled: The background color for enabled buttons. Default: red
+		- Parameter buttonBackgroundDisabled: The background color for disabled buttons. Default: lightGray
+		- Parameter codeFieldBackgroundEmpty: The background color for empty code fields. Default: clear
+		- Parameter codeFieldBackgroundFilled: The background color for filled code fields (and their border). Default: white
+		- Parameter codeFieldText: The text color for code fields. Default: black
+		- Parameter animationDuration: The duration for all animations. Default: 0.3s
+		- Parameter errorDuration: The duration for showing error messages. Default: 5s
+		- Parameter requestCode: Block called for requesting the verification code from FireBase Auth API
+		- Parameter signIn: Block called for verifying a code with the FireBase Auth API
+	*/
 	public init(statusBar: UIStatusBarStyle = .lightContent,
 	     keyboard: UIKeyboardAppearance = .dark,
 	     headerBackground: UIImage? = nil,

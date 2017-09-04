@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### New Features
 
 - Add a header foreground image view (with aspect-fit content scale).
+- Document all configuration options.
 
 ### Bug Fixes
 
