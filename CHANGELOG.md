@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 ### Bug Fixes
 
 - Dismiss the keyboard before disappear.
+- Some fixes to UI color customization (button tints).
 
 ## [1.2.0](https://github.com/djbe/PhoneVerificationController/releases/tag/1.2.0)
 

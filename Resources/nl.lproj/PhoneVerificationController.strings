@@ -5,8 +5,8 @@
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Mt4-uO-YGe"; */
 "Mt4-uO-YGe.normalTitle" = "Annuleren";
 
-/* Class = "UITextField"; placeholder = "phonenumber"; ObjectID = "Q56-gb-PSX"; */
-"Q56-gb-PSX.placeholder" = "gms nummer";
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "Q56-gb-PSX"; */
+"Q56-gb-PSX.placeholder" = "GSM nummer";
 
 /* Class = "UIButton"; normalTitle = "Try again"; ObjectID = "eGH-n2-JtO"; */
 "eGH-n2-JtO.normalTitle" = "Probeer opnieuw";

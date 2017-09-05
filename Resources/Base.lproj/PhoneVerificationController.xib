@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,8 +44,8 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JT6-iI-JD5">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IIm-Ze-gP6">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="665"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IIm-Ze-gP6">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="681"/>
                             <subviews>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xs-60-sze">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="165.66666666666666"/>
@@ -62,7 +63,7 @@
                                             </constraints>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="w5l-7o-xVB" secondAttribute="bottom" id="EXy-cT-wzc"/>
                                         <constraint firstItem="w5l-7o-xVB" firstAttribute="leading" secondItem="0xs-60-sze" secondAttribute="leading" id="aQm-Ds-gl2"/>
@@ -75,7 +76,7 @@
                                     </constraints>
                                 </view>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xr-60-sze">
-                                    <rect key="frame" x="0.0" y="173.66666666666669" width="414" height="295.33333333333337"/>
+                                    <rect key="frame" x="0.0" y="181.66666666666669" width="414" height="295.33333333333337"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="82T-SA-Jhu">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="295.33333333333337"/>
@@ -84,7 +85,7 @@
                                                     <rect key="frame" x="20" y="0.0" width="374" height="199.33333333333334"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="500" text="Please enter your phone number (ex. +32 473123456)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wvX-Vo-aas">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="150.33333333333334"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="146.33333333333334"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -152,7 +153,7 @@
                                                                                 <constraint firstAttribute="height" constant="1" id="eTV-ip-d0r"/>
                                                                             </constraints>
                                                                         </view>
-                                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="phonenumber" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q56-gb-PSX">
+                                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q56-gb-PSX">
                                                                             <rect key="frame" x="0.0" y="0.0" width="150.00000000000003" height="36"/>
                                                                             <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -197,7 +198,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="F70-aB-tdt" secondAttribute="bottom" constant="8" id="KDJ-ZP-5vg"/>
                                                         <constraint firstAttribute="trailing" secondItem="wvX-Vo-aas" secondAttribute="trailing" id="QZ8-fR-sxq"/>
                                                         <constraint firstItem="F70-aB-tdt" firstAttribute="centerX" secondItem="TDm-13-JFO" secondAttribute="centerX" id="a4V-AW-pCN"/>
-                                                        <constraint firstItem="F70-aB-tdt" firstAttribute="top" secondItem="wvX-Vo-aas" secondAttribute="bottom" constant="4" id="bMG-nY-8F6"/>
+                                                        <constraint firstItem="F70-aB-tdt" firstAttribute="top" secondItem="wvX-Vo-aas" secondAttribute="bottom" constant="8" id="bMG-nY-8F6"/>
                                                         <constraint firstItem="wvX-Vo-aas" firstAttribute="top" secondItem="TDm-13-JFO" secondAttribute="top" id="vma-ZW-0eZ"/>
                                                     </constraints>
                                                 </view>
@@ -211,9 +212,8 @@
                                                                 <constraint firstAttribute="height" constant="50" id="YrX-Jq-X0B"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                            <state key="normal" title="Send">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </state>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <state key="normal" title="Send"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                     <real key="value" value="20"/>
@@ -244,9 +244,8 @@
                                                         <constraint firstAttribute="height" constant="30" id="acp-vc-z2H"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <state key="normal" title="Cancel">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Cancel"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <real key="value" value="20"/>
@@ -269,7 +268,7 @@
                                     </constraints>
                                 </view>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xah-4d-uRr">
-                                    <rect key="frame" x="0.0" y="477" width="414" height="188"/>
+                                    <rect key="frame" x="0.0" y="493" width="414" height="188"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DTY-6q-4PJ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
@@ -453,9 +452,8 @@
                                                                 <constraint firstAttribute="height" constant="50" id="auQ-2c-MiE"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                            <state key="normal" title="Verify">
-                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            </state>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <state key="normal" title="Verify"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                     <real key="value" value="20"/>
@@ -486,9 +484,8 @@
                                                         <constraint firstAttribute="height" constant="30" id="SJf-AT-834"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <state key="normal" title="Try again">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Try again"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <real key="value" value="20"/>
