@@ -101,6 +101,11 @@ extension PhoneVerificationController {
 		super.viewWillAppear(animated)
 		phoneNumberField.becomeFirstResponder()
 	}
+
+	override open func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		view.endEditing(true)
+	}
 }
 
 // MARK: - Helper methods
