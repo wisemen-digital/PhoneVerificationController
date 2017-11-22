@@ -44,7 +44,7 @@ extension PhoneVerificationController: UITextFieldDelegate {
 
 	public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 		guard let text = textField.text as NSString? else { return true }
-		return text.replacingCharacters(in: range, with: string).characters.count <= 1
+		return text.replacingCharacters(in: range, with: string).count <= 1
 	}
 
 	@IBAction func tryAgain() {

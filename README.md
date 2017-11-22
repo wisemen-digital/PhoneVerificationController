@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/PhoneVerificationController.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
 [![License](https://img.shields.io/cocoapods/l/PhoneVerificationController.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
 [![Platform](https://img.shields.io/cocoapods/p/PhoneVerificationController.svg?style=flat)](https://cocoapods.org/pods/PhoneVerificationController)
+[![Swift version](https://img.shields.io/badge/Swift-4-orange.svg)](https://cocoapods.org/pods/CountryPickerSwift)
 
 <a href="https://raw.githubusercontent.com/appwise-labs/PhoneVerificationController/master/Example/Screenshots/01.png"><img width=150 height=267 src="https://raw.githubusercontent.com/appwise-labs/PhoneVerificationController/master/Example/Screenshots/01.png" alt="Screenshots" /></a>
 <a href="https://raw.githubusercontent.com/appwise-labs/PhoneVerificationController/master/Example/Screenshots/02.png"><img width=150 height=267 src="https://raw.githubusercontent.com/appwise-labs/PhoneVerificationController/master/Example/Screenshots/02.png" alt="Screenshots" /></a>

@@ -1,14 +1,14 @@
 PODS:
-  - CountryPickerSwift (1.4.4)
-  - PhoneNumberKit (1.3.0):
-    - PhoneNumberKit/PhoneNumberKitCore (= 1.3.0)
-    - PhoneNumberKit/UIKit (= 1.3.0)
-  - PhoneNumberKit/PhoneNumberKitCore (1.3.0)
-  - PhoneNumberKit/UIKit (1.3.0):
+  - CountryPickerSwift (1.4.5)
+  - PhoneNumberKit (2.0.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.0.0)
+    - PhoneNumberKit/UIKit (= 2.0.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.0.0)
+  - PhoneNumberKit/UIKit (2.0.0):
     - PhoneNumberKit/PhoneNumberKitCore
-  - PhoneVerificationController (1.2.0):
-    - CountryPickerSwift
-    - PhoneNumberKit
+  - PhoneVerificationController (2.0.0):
+    - CountryPickerSwift (~> 1.4)
+    - PhoneNumberKit (~> 2.0.0)
 
 DEPENDENCIES:
   - PhoneVerificationController (from `../`)
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CountryPickerSwift: e31e67f2b95eb1fa6ad230e9eb0b49b020526d99
-  PhoneNumberKit: 08aaf1968ea41a114327e9223cbb0391d76ae145
-  PhoneVerificationController: a0fd0dcb08ba9c66f1f1ab5e04c5dc288b1a3aa3
+  CountryPickerSwift: be2cf0dc41887d8b16ea65ae263a70adb0cc953a
+  PhoneNumberKit: 073b3cef30c2a64ddcd623ea5953bc84bb5b3fc4
+  PhoneVerificationController: 22ff2745b00de01de24b328e2cf4a2e4c1e0355d
 
 PODFILE CHECKSUM: 2f23758463e48d8008bc7138665769aaa6126106
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0.beta.2
