@@ -8,12 +8,12 @@ When you commit a change, please add a note to [CHANGELOG.md](CHANGELOG.md).
 
 ## Release Process
 
-1. Confirm the build is [passing in travis](https://travis-ci.org/djbe/PhoneVerificationController)
+1. Confirm the build is [passing in travis](https://travis-ci.org/appwise-labs/PhoneVerificationController)
    1. This automatically checks the Podfile is building
 2. Push a release commit
    1. Create a new Master section at the top
    2. Rename the old Master section like:
-          ## [1.0.5](https://github.com/djbe/PhoneVerificationController/releases/tag/1.0.5)
+          ## [1.0.5](https://github.com/appwise-labs/PhoneVerificationController/releases/tag/1.0.5)
           Released on 2016-02-14.
    3. Update the Podspec version number
 3. Create a GitHub release

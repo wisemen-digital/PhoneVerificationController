@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Master](https://github.com/djbe/PhoneVerificationController)
 
+## [1.2.2](https://github.com/djbe/PhoneVerificationController/releases/tag/1.2.2)
+
+Migration to [Appwise](https://github.com/appwise-labs) organisation.
+
+## [1.2.1](https://github.com/djbe/PhoneVerificationController/releases/tag/1.2.1)
+
 ### New Features
 
 ### Bug Fixes
@@ -32,4 +38,4 @@ All notable changes to this project will be documented in this file.
 
 ## [1.0.0](https://github.com/djbe/PhoneVerificationController/releases/tag/1.0.0)
 
-Initial release
+Initial release.
