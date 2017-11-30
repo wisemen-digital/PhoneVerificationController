@@ -1,4 +1,11 @@
+"button.cancel" = "Annuler";
+"button.send" = "Envoyer";
+"button.try-again" = "Réessayer";
+"button.verify" = "Vérifier";
+
 "description.phone" = "Entrez votre numéro de téléphone (par ex. +32 473123456)";
 "description.code" = "Entrez le code de vérification que vous recevrez par SMS";
 
 "message.success" = "Succes!";
+
+"placeholder.phone" = "Téléphone";

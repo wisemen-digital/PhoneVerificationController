@@ -8,6 +8,17 @@ import Foundation
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 enum L10n {
 
+  enum Button {
+    /// Cancel
+    static let cancel = L10n.tr("Localizable", "button.cancel")
+    /// Send
+    static let send = L10n.tr("Localizable", "button.send")
+    /// Try again
+    static let tryAgain = L10n.tr("Localizable", "button.try-again")
+    /// Verify
+    static let verify = L10n.tr("Localizable", "button.verify")
+  }
+
   enum Description {
     /// Please enter the verification code you will receive by SMS
     static let code = L10n.tr("Localizable", "description.code")
@@ -18,6 +29,11 @@ enum L10n {
   enum Message {
     /// Success!
     static let success = L10n.tr("Localizable", "message.success")
+  }
+
+  enum Placeholder {
+    /// Phone Number
+    static let phone = L10n.tr("Localizable", "placeholder.phone")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name

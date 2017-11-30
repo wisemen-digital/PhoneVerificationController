@@ -83,9 +83,14 @@ extension PhoneVerificationController {
 			field.delegate = self
 		}
 
-		// labels
+		// strings
+		phoneSendButton.setTitle(L10n.Button.send, for: .normal)
+		phoneCancelButton.setTitle(L10n.Button.cancel, for: .normal)
+		codeSendButton.setTitle(L10n.Button.verify, for: .normal)
+		codeTryAgainButton.setTitle(L10n.Button.tryAgain, for: .normal)
 		phoneDescriptionLabel.text = L10n.Description.phone
 		codeDescriptionLabel.text = L10n.Description.code
+		phoneNumberField.placeholder = L10n.Placeholder.phone
 
 		// apply configuration
 		apply(configuration: configuration)

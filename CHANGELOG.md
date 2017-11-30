@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Master](https://github.com/djbe/PhoneVerificationController)
 
+### Bug Fixes
+
+- Fix localizations not loading due to some weird UIKit bug.
+
 ## [2.0.0](https://github.com/djbe/PhoneVerificationController/releases/tag/2.0.0)
 
 ### New Features
