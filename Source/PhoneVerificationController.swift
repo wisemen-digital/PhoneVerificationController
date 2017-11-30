@@ -48,7 +48,6 @@ open class PhoneVerificationController: UIViewController {
 
 		return picker
 	}()
-	fileprivate var originalText = [UILabel: String]()
 	fileprivate var errorTask = [UILabel: DispatchWorkItem]()
 	internal(set) var configuration: Configuration
 	public weak var delegate: PhoneVerificationDelegate?
@@ -83,9 +82,10 @@ extension PhoneVerificationController {
 		for field in codeTextFields {
 			field.delegate = self
 		}
-		for label in [phoneDescriptionLabel, codeDescriptionLabel] as [UILabel] {
-			originalText[label] = label.text ?? ""
-		}
+
+		// labels
+		phoneDescriptionLabel.text = L10n.Description.phone
+		codeDescriptionLabel.text = L10n.Description.code
 
 		// apply configuration
 		apply(configuration: configuration)
@@ -139,13 +139,13 @@ extension PhoneVerificationController {
 		}
 	}
 
-	internal func show(error: Error, in label: UILabel) {
+	internal func show(error: Error, in label: UILabel, original: String) {
 		errorTask[label]?.cancel()
 		label.text = error.localizedDescription
 
 		// enqueue error
-		let task = DispatchWorkItem { [weak self] in
-			label.text = self?.originalText[label]
+		let task = DispatchWorkItem {
+			label.text = original
 		}
 		DispatchQueue.main.asyncAfter(deadline: .now() + configuration.errorDuration, execute: task)
 		errorTask[label] = task

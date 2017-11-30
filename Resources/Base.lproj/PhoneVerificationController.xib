@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -76,10 +76,10 @@
                                     </constraints>
                                 </view>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xr-60-sze">
-                                    <rect key="frame" x="0.0" y="181.66666666666669" width="414" height="295.33333333333337"/>
+                                    <rect key="frame" x="0.0" y="181.66666666666666" width="414" height="295.33333333333337"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="82T-SA-Jhu">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="295.33333333333337"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="295.33333333333331"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDm-13-JFO">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="199.33333333333334"/>
@@ -94,17 +94,17 @@
                                                             <rect key="frame" x="58.666666666666686" y="154.33333333333334" width="258" height="37"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h65-CH-Kv1">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="99.999999999999986" height="37"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="37"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCB-rd-6g3">
-                                                                            <rect key="frame" x="0.0" y="36" width="99.999999999999986" height="1"/>
+                                                                            <rect key="frame" x="0.0" y="36" width="100" height="1"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="1" id="SUl-Ka-nFQ"/>
                                                                             </constraints>
                                                                         </view>
                                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country code" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Sr-CO-Acj">
-                                                                            <rect key="frame" x="39.333333333333329" y="0.0" width="60.666666666666657" height="36"/>
+                                                                            <rect key="frame" x="39.333333333333329" y="0.0" width="60.666666666666671" height="36"/>
                                                                             <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -114,7 +114,7 @@
                                                                             </connections>
                                                                         </textField>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4K-7q-i2I">
-                                                                            <rect key="frame" x="0.0" y="6" width="31.333333333333329" height="25"/>
+                                                                            <rect key="frame" x="0.0" y="6" width="31.333333333333332" height="25"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" secondItem="Q4K-7q-i2I" secondAttribute="height" multiplier="5:4" id="YA7-Np-23A"/>
                                                                             </constraints>
@@ -144,17 +144,17 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i52-jp-sZZ">
-                                                                    <rect key="frame" x="107.99999999999999" y="0.0" width="150" height="37"/>
+                                                                    <rect key="frame" x="108" y="0.0" width="150" height="37"/>
                                                                     <subviews>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lS3-lN-5op">
-                                                                            <rect key="frame" x="0.0" y="36" width="150.00000000000003" height="1"/>
+                                                                            <rect key="frame" x="0.0" y="36" width="150" height="1"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="1" id="eTV-ip-d0r"/>
                                                                             </constraints>
                                                                         </view>
                                                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q56-gb-PSX">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="150.00000000000003" height="36"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="36"/>
                                                                             <color key="tintColor" red="0.89618283509999996" green="0.174743861" blue="0.047521017489999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>

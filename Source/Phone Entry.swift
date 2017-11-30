@@ -38,7 +38,7 @@ extension PhoneVerificationController: CountryPickerDelegate {
 
 			strongSelf.phoneActivityIndicator.stopAnimating()
 			if let error = error {
-				strongSelf.show(error: error, in: strongSelf.phoneDescriptionLabel)
+				strongSelf.show(error: error, in: strongSelf.phoneDescriptionLabel, original: L10n.Description.phone)
 			} else if let verificationID = verificationID {
 				strongSelf.configuration.verificationID = verificationID
 				strongSelf.switchToCodeVerification()

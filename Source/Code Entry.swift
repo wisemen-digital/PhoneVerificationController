@@ -68,9 +68,9 @@ extension PhoneVerificationController: UITextFieldDelegate {
 
 			strongSelf.codeActivityIndicator.stopAnimating()
 			if let error = error {
-				strongSelf.show(error: error, in: strongSelf.codeDescriptionLabel)
+				strongSelf.show(error: error, in: strongSelf.codeDescriptionLabel, original: L10n.Description.code)
 			} else {
-				strongSelf.codeDescriptionLabel.text = NSLocalizedString("message.success", bundle: PhoneVerificationController.bundle, comment: "Code verification success message")
+				strongSelf.codeDescriptionLabel.text = L10n.Message.success
 				if let delegate = strongSelf.delegate {
 					delegate.verified(phoneNumber: strongSelf.phoneNumber, controller: strongSelf)
 				} else {
