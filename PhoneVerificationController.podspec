@@ -16,7 +16,10 @@ Pod::Spec.new do |s|
 		:type => 'MIT',
 		:file => 'LICENSE'
 	}
+
+	# configuration
 	s.ios.deployment_target = '9.0'
+	s.swift_version = '4.0'
 	
 	# files
 	s.source = {

@@ -6,7 +6,7 @@ PODS:
   - PhoneNumberKit/PhoneNumberKitCore (2.0.0)
   - PhoneNumberKit/UIKit (2.0.0):
     - PhoneNumberKit/PhoneNumberKitCore
-  - PhoneVerificationController (2.0.0):
+  - PhoneVerificationController (2.0.1):
     - CountryPickerSwift (~> 1.4)
     - PhoneNumberKit (~> 2.0.0)
   - SwiftGen (5.2.1)
@@ -22,9 +22,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CountryPickerSwift: be2cf0dc41887d8b16ea65ae263a70adb0cc953a
   PhoneNumberKit: 073b3cef30c2a64ddcd623ea5953bc84bb5b3fc4
-  PhoneVerificationController: 22ff2745b00de01de24b328e2cf4a2e4c1e0355d
+  PhoneVerificationController: 578133b4e5171177f0eedcffd92eeccfe92e2273
   SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
 
 PODFILE CHECKSUM: e7ae69393d9f914093fe7b08930eb1822c1b2bb6
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.4.0.rc.1
