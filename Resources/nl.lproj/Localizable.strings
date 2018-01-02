@@ -1,10 +1,10 @@
 "button.cancel" = "Annuleren";
 "button.send" = "Versturen";
 "button.try-again" = "Opnieuw proberen";
-"button.verify" = "Verifieren";
+"button.verify" = "Verifiëren";
 
 "description.phone" = "Gelieve uw GSM nummer in te geven (vb. +32 473123456)";
-"description.code" = "Gelieve de verificatie code in te geven die u via SMS ontvangen heeft";
+"description.code" = "Gelieve de verificatiecode in te geven die u via SMS ontvangen heeft";
 
 "message.success" = "Succes!";
 
