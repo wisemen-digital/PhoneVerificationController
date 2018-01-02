@@ -71,10 +71,12 @@ extension PhoneVerificationController {
 		super.viewDidLoad()
 
 		// sort by x (outlet collections have no guaranteed order)
-		codeTextFields.sort { left, right in
-			let a = view.convert(left.bounds, from: left)
-			let b = view.convert(right.bounds, from: right)
-			return a.midX < b.midX
+		if let stackView = codeTextFields.first?.superview as? UIStackView {
+			codeTextFields.sort { left, right in
+				let il = stackView.arrangedSubviews.index(of: left) ?? 0
+				let ir = stackView.arrangedSubviews.index(of: right) ?? 0
+				return il < ir
+			}
 		}
 
 		// connect some stuff
