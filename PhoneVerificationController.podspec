@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 	# info
 	s.name = 'PhoneVerificationController'
-	s.version = '2.0.1'
+	s.version = '2.0.2'
 	s.summary = 'A nicer UI for FireBase phone authentication.'
 	s.description = <<-DESC
 	This is a replacement for FireBaseUI for phone authentication. The UI is completely customizable using a configuration structure.
@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
 	
 	# dependencies
 	s.dependency 'CountryPickerSwift', '~> 1.4'
-	s.dependency 'PhoneNumberKit', '~> 2.0.0'
+	s.dependency 'PhoneNumberKit', '~> 2.1.0'
 end

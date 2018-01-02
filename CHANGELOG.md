@@ -12,7 +12,15 @@ _None_
 
 _None_
 
-## [2.0.1](https://github.com/djbe/PhoneVerificationController/releases/tag/2.0.0)
+## [2.0.2](https://github.com/djbe/PhoneVerificationController/releases/tag/2.0.2)
+
+### Bug Fixes
+
+- Fix an issue with the code field entry (sorting).
+- Some translation fixes (dutch language).
+- Minor layout tweaks.
+
+## [2.0.1](https://github.com/djbe/PhoneVerificationController/releases/tag/2.0.1)
 
 ### Bug Fixes
 
