@@ -1,5 +1,5 @@
 PODS:
-  - CountryPickerSwift (1.4.5)
+  - CountryPickerSwift (1.8.0)
   - PhoneNumberKit (2.1.0):
     - PhoneNumberKit/PhoneNumberKitCore (= 2.1.0)
     - PhoneNumberKit/UIKit (= 2.1.0)
@@ -9,22 +9,28 @@ PODS:
   - PhoneVerificationController (2.0.2):
     - CountryPickerSwift (~> 1.4)
     - PhoneNumberKit (~> 2.1.0)
-  - SwiftGen (5.2.1)
+  - SwiftGen (6.1.0)
 
 DEPENDENCIES:
   - PhoneVerificationController (from `../`)
   - SwiftGen
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CountryPickerSwift
+    - PhoneNumberKit
+    - SwiftGen
+
 EXTERNAL SOURCES:
   PhoneVerificationController:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  CountryPickerSwift: be2cf0dc41887d8b16ea65ae263a70adb0cc953a
+  CountryPickerSwift: 4c328ae9687322cacf541120f5c43f0e2c1ba194
   PhoneNumberKit: 62003f40ff75315fd3738286558bc365365ac222
-  PhoneVerificationController: 315257ff43e648e6c70c8735a04b04dbac7b6dbe
-  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+  PhoneVerificationController: 800bb41b72152f781a7f24c384de3e4e100b5148
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
 
 PODFILE CHECKSUM: e7ae69393d9f914093fe7b08930eb1822c1b2bb6
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.7.1
