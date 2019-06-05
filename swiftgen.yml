@@ -1,6 +1,7 @@
 input_dir: Resources
 output_dir: Source
 strings:
-  paths: Base.lproj/Localizable.strings
-  templatePath: templates/strings.stencil
-  output: Strings.swift
+  inputs: Base.lproj/Localizable.strings
+  outputs:
+    - templatePath: templates/strings.stencil
+      output: Strings.swift
