@@ -37,7 +37,7 @@ extension PhoneVerificationController: UITextFieldDelegate {
 	}
 
 	func keyboardInputShouldDelete(_ textField: UITextField) -> Bool {
-		guard let index = codeTextFields.index(of: textField), index > 0 else { return true }
+		guard let index = codeTextFields.firstIndex(of: textField), index > 0 else { return true }
 		codeTextFields[index - 1].becomeFirstResponder()
 		return true
 	}

@@ -73,8 +73,8 @@ extension PhoneVerificationController {
 		// sort by x (outlet collections have no guaranteed order)
 		if let stackView = codeTextFields.first?.superview as? UIStackView {
 			codeTextFields.sort { left, right in
-				let il = stackView.arrangedSubviews.index(of: left) ?? 0
-				let ir = stackView.arrangedSubviews.index(of: right) ?? 0
+				let il = stackView.arrangedSubviews.firstIndex(of: left) ?? 0
+				let ir = stackView.arrangedSubviews.firstIndex(of: right) ?? 0
 				return il < ir
 			}
 		}
@@ -136,9 +136,9 @@ extension PhoneVerificationController {
 			button?.backgroundColor = configuration.buttonBackgroundDisabled
 		}
 		for field in [phoneCountryField, phoneNumberField] + codeTextFields {
-			field.keyboardAppearance = configuration.keyboard
-			field.tintColor = configuration.buttonTint
-			field.textColor = configuration.text
+            field?.keyboardAppearance = configuration.keyboard
+            field?.tintColor = configuration.buttonTint
+            field?.textColor = configuration.text
 		}
 		for field in codeTextFields {
 			field.layer.borderColor = configuration.codeFieldBackgroundFilled.cgColor
