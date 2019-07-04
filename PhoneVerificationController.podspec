@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
 
 	# configuration
 	s.ios.deployment_target = '9.0'
-	s.swift_version = '4.0'
-	
+	s.swift_version = '5.0'
+
 	# files
 	s.source = {
 		:git => 'https://github.com/appwise-labs/PhoneVerificationController.git',
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
 	s.resource_bundles = {
 		'PhoneVerificationControllerResources' => ['Resources/**/*']
 	}
-	
+
 	# dependencies
-	s.dependency 'CountryPickerSwift', '~> 1.4'
-	s.dependency 'PhoneNumberKit', '~> 2.1.0'
+	s.dependency 'CountryPickerSwift', '~> 1.8'
+	s.dependency 'PhoneNumberKit', '~> 2.6'
 end

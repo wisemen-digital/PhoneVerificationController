@@ -136,9 +136,9 @@ extension PhoneVerificationController {
 			button?.backgroundColor = configuration.buttonBackgroundDisabled
 		}
 		for field in [phoneCountryField, phoneNumberField] + codeTextFields {
-			field.keyboardAppearance = configuration.keyboard
-			field.tintColor = configuration.buttonTint
-			field.textColor = configuration.text
+			field?.keyboardAppearance = configuration.keyboard
+			field?.tintColor = configuration.buttonTint
+			field?.textColor = configuration.text
 		}
 		for field in codeTextFields {
 			field.layer.borderColor = configuration.codeFieldBackgroundFilled.cgColor
