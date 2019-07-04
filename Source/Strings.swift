@@ -1,46 +1,56 @@
-// Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
+// swiftlint:disable all
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
 
 import Foundation
 
 // swiftlint:disable superfluous_disable_command
 // swiftlint:disable file_length
 
-// swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
-enum L10n {
+// MARK: - Strings
 
-  enum Button {
+// swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
+// swiftlint:disable nesting type_body_length type_name
+internal enum L10n {
+
+  internal enum Button {
     /// Cancel
-    static let cancel = L10n.tr("Localizable", "button.cancel")
+    internal static let cancel = L10n.tr("Localizable", "button.cancel")
     /// Send
-    static let send = L10n.tr("Localizable", "button.send")
+    internal static let send = L10n.tr("Localizable", "button.send")
     /// Try again
-    static let tryAgain = L10n.tr("Localizable", "button.try-again")
+    internal static let tryAgain = L10n.tr("Localizable", "button.try-again")
     /// Verify
-    static let verify = L10n.tr("Localizable", "button.verify")
+    internal static let verify = L10n.tr("Localizable", "button.verify")
   }
 
-  enum Description {
+  internal enum Description {
     /// Please enter the verification code you will receive by SMS
-    static let code = L10n.tr("Localizable", "description.code")
+    internal static let code = L10n.tr("Localizable", "description.code")
     /// Please enter your phone number (ex. +32 473123456)
-    static let phone = L10n.tr("Localizable", "description.phone")
+    internal static let phone = L10n.tr("Localizable", "description.phone")
   }
 
-  enum Message {
+  internal enum Message {
     /// Success!
-    static let success = L10n.tr("Localizable", "message.success")
+    internal static let success = L10n.tr("Localizable", "message.success")
   }
 
-  enum Placeholder {
+  internal enum Placeholder {
     /// Phone Number
-    static let phone = L10n.tr("Localizable", "placeholder.phone")
+    internal static let phone = L10n.tr("Localizable", "placeholder.phone")
   }
 }
-// swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
+// swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
+// swiftlint:enable nesting type_body_length type_name
+
+// MARK: - Implementation Details
 
 extension L10n {
   private static func tr(_ table: String, _ key: String, _ args: CVarArg...) -> String {
+    // swiftlint:disable:next nslocalizedstring_key
     let format = NSLocalizedString(key, tableName: table, bundle: PhoneVerificationController.bundle, comment: "")
     return String(format: format, locale: Locale.current, arguments: args)
   }
 }
+
+private final class BundleToken {}
